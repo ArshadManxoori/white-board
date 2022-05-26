@@ -1,0 +1,42 @@
+font icon -> https://fontawesome.com/v5.15/icons/bars?style=solid
+font icon cd -> https://cdnjs.com/libraries/font-awesome/5.10.0
+                set version 5.10.0 copy first link
+box shadow -> https://getcssscan.com/css-box-shadow-examples 
+drag n drop -> https://javascript.info/mouse-drag-and-drop
+canvas documentry -> https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+drawing documentry -> https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Drawing_graphics
+socketio cdn -> https://socket.io/docs/v4/client-installation/
+
+
+git config user.email "you@example.com"
+git config user.name "Your Name"
+
+
+
+-CANVAS DRAWING OVERVIEW-
+let canvas = document.querySelector("canvas");
+canvas.width = window.innerWidth;   //value is in px
+canvas.height = window.innerHeight;   
+
+//API
+let tool = canvas.getContext('2d'); //we can say this tool is a api with the help of this we will perform our graphics tasks
+
+tool.strokeStyle = 'red';   //cahnge color
+tool.lineWidth = "3";   //increase thickness on drawed line
+
+//canvas drawing overview
+tool.beginPath();   //new path (grpahic)(line)
+tool.moveTo(10, 10);    //start point
+tool.lineTo(100, 150);  //end point , till now a invisivle line is created
+tool.stroke();  //fill color (graphic) (make line visible)
+
+tool.strokeStyle = 'blue';
+// tool.beginPath();
+// tool.moveTo(10, 10);
+tool.lineTo(200, 250);  //drw starts from last ending point
+tool.stroke();
+
+// tool.beginPath();
+// tool.moveTo(10, 10);
+// tool.lineTo(200, 200);
+// tool.stroke();
